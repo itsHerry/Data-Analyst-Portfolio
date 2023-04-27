@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="glassmorphism nav">
+      <h2 class="portfolio">Portfolio.</h2>
+      <ul class="links">
+        <li
+          class="link active-link"
+          id="home"
+          title="Home"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="home"></ion-icon>
+        </li>
+        <li
+          class="link"
+          id="projects"
+          title="Projects"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="laptop"></ion-icon>
+        </li>
+        <li
+          class="link"
+          id="contact"
+          title="Contact"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="mail"></ion-icon>
+        </li>
+        <li
+          class="link"
+          id="about"
+          title="About Me"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="person"></ion-icon>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contains all the Pages -->
+    <main id="container">
+      <!-- Home Section -->
+      <section class="pages glassmorphism" id="home-section">
+        <div class="background"></div>
+        <div class="background circle"></div>
+        <div class="text-container">
+          <h3 class="intro">Hi, This is</h3>
+          <h1 class="full-name">Sajjad Qureshi</h1>
+          <h2 class="data-analyst">A Data Analyst.</h2>
+          <p class="qoute">
+            "Instead of looking up to role models, become one yourself."
+          </p>
+        </div>
+        <div class="home-illustration-container">
+          <img
+            src="assets/dataAnalyst.jpg"
+            alt="illustration of data analyst showing off his skills"
+            class="home-illustration"
+          />
+          <p>
+            Designed by
+            <a class="attribute" href="https://freepik.com" target="_blank"
+              >freepik</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="pages glassmorphism" id="projects-section">
+        <h3 class="projects">Projects</h3>
+
+        <div class="projects-container">
+          <!-- Electronic Store Analysis -->
+          <a
+            href="https://github.com/Sajjad-Qureshi/Electronic-Store-Sales-Analysis"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="./assets/ElectronicStore.png"
+                alt="Screenshot of Electronics Store Analysis "
+                class="project-images"
+              />
+              <h3 class="project-title">Electronics Store Sales Analysis</h3>
+              <p class="project-description">
+                Analyze sales data of an Electronic store, extract meaning and
+                answer some awesome business questions.
+              </p>
+            </div>
+          </a>
+
+          <!-- E-Commerce-Sales-Analysis -->
+          <a
+            href="https://github.com/Sajjad-Qureshi/E-Commerce-Sales-Analysis"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="./assets/ECommerce.png"
+                alt="Screenshot of E-Commerce Sales Analysis "
+                class="project-images"
+              />
+              <h3 class="project-title">E-Commerce Sales Analysis</h3>
+              <p class="project-description">
+                Analyze an E-Commerce dataset, extract meaning and answer
+                business questions and show some sales trends.
+              </p>
+            </div>
+          </a>
+
+          <!-- Electronic Store PowerBi Dashboard -->
+          <a
+            href="https://github.com/Sajjad-Qureshi/Electronic-Store-PowerBi-Dashboard"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="./assets/electronicStoreDashboard.png"
+                alt="Screenshot of Electronics Store PowerBI Dashboard"
+                class="project-images"
+              />
+              <h3 class="project-title">Electronics Store Dashboard</h3>
+              <p class="project-description">
+                Analyze sales data and create dashboard with Power Bi of an
+                Electronic store, extract meaning and display trends.
+              </p>
+            </div>
+          </a>
+
+          <!-- E-Commerce-Sales-PowerBi-Dashboard -->
+          <a
+            href="https://github.com/Sajjad-Qureshi/E-Commerce-Sales-PowerBi-Dashboard"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="./assets/ECommerceDashboard.png"
+                alt="Screenshot of E-Commerce Sales PowerBi Dashboard"
+                class="project-images"
+              />
+              <h3 class="project-title">E-Commerce Sales Dashboard</h3>
+              <p class="project-description">
+                Analyze sales data and create dashboard with Power Bi of an
+                E-Commerce dataset, extract meaning and display trends.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="pages" id="contact-section">
+        <div class="contact-us-container glassmorphism">
+          <h3 class="contact-us">Contact Us</h3>
+          <form action="#">
+            <input type="text" class="name" placeholder="Name" />
+            <input type="email" class="email" placeholder="Email" />
+            <input type="text" class="message" placeholder="Message" />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <img
+          src="assets/smartphone.png"
+          alt="an illustration of 'contact us'"
+          class="contact-illustration"
+        />
+      </section>
+
+      <!-- About Section  -->
+      <section class="pages" id="about-section">
+        <div class="about-container glassmorphism">
+          <h3 class="about-me">About Me</h3>
+          <div>
+            <img src="./assets/Sajjni.jpg" alt="Data Analyst Sajjad Qureshi" />
+          </div>
+          <p class="about-me-description">
+            A data analyst with a knack for finding hidden gems in complex data
+            sets. I'm fluent in the language and tools like Python, Excel, Power
+            Bi. My enthusiasm for data is contagious, and I'm always looking for
+            ways to make data analysis more fun and engaging. If you're looking
+            for someone who can turn data into a work of art, look no further!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Installation Of Icons  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
